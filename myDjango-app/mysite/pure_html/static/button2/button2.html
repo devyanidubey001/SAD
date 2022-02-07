@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Title</title>
+
+    
+    <link rel="stylesheet" href="../main-style.css">
+    <link rel="stylesheet" href="./button2.css">
+
+    <link rel="preconnect" href=" https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+
+
+   
+</head>
+<style>
+    
+  .button {
+    transition: all .2s;
+ }
+
+  .button:hover {
+    color: #F5F5F5;
+    background-color: #121212;
+    cursor: pointer;
+ }
+
+   .button:active {
+    color: #F5F5F5;
+    background-color: #121212;
+    transform: translateY(.2rem);
+ }
+</style>
+ <body class="full super-center-grid ">
+    <button class="button" onClick="myFunc()">What's my Name?</button>
+    <div class="super-center-grid main-layout default-shadow" id="xyz"></div>
+
+ </body>
+</html>
+<script>
+            function myFunc() {
+                document.getElementById("xyz").innerHTML = '<font size="4">Devyani</font>';
+            }
+</script>
