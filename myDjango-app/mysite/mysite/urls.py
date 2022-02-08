@@ -19,9 +19,14 @@ import teammate.views
 import pure_html.views
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('teammate/',teammate.views.index, name ="index"),
-    path('pure_html/', pure_html.views.index , name='index')
+    path('pure_html/', pure_html.views.index, name = 'index'),
+    path('pure_html/interval.html', pure_html.views.interval, name = 'interval'),
+    path('pure_html/button.html', pure_html.views.button, name = 'button'),
+    path('pure_html/button2.html', pure_html.views.button2, name = 'button2'),
+
 ]
 
